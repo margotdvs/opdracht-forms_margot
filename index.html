@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht Forms</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">The big short animal quiz</h1>
+      <form class="quiz">
+        <div class="intro"></div>
+        <section class="question-list">
+          <h2 class="question-list__title">De vragen</h2>
+          <fieldset class="question-list__form">
+            <legend class="question-list__question">
+              Welke (Engelstalige) namen worden gebruikt om een groep van dieren
+              te beschrijven?
+            </legend>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="murder" />
+              a murder
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="mob" />
+              a mob
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="shiver" />
+              a shiver
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="gang" />
+              a gang
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="conspiracy" />
+              a mconspiracy
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="destruction" />
+              a destruction
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="convocation" />
+              a convocation
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="business" />
+              a business
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="fraternity" />
+              a fraternity
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="brotherhood" />
+              a brotherhood
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="tribe" />
+              a tribe
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="club" />
+              a club
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="cast" />
+              a cast
+            </label>
+            <label class="question-list__answer">
+              <input type="checkbox" name="animals" value="host" />
+              a host
+            </label>
+          </fieldset>
+          <fieldset class="question-list__form">
+            <legend class="question-list__question">
+              Het vogelbekdier legt eieren, heeft een snavel, en leeft in het
+              water.
+              <br />
+              Maar hoe wordt het geclassificeerd? Als een...
+            </legend>
+            <label class="question-list__answer">
+              <input type="radio" name="class" value="vis" />
+              vis
+            </label>
+            <label class="question-list__answer">
+              <input type="radio" name="class" value="vogel" />
+              vogel
+            </label>
+            <label class="question-list__answer">
+              <input type="radio" name="class" value="zoogdier" />
+              zoogdier
+            </label>
+            <label class="question-list__answer">
+              <input type="radio" name="class" value="amfibie" />
+              amfibie
+            </label>
+            <label class="question-list__answer">
+              <input type="radio" name="class" value="reptiel" />
+              reptiel
+            </label>
+          </fieldset>
+          <label
+            for="huiskat"
+            class="question-list__question question-list__no-border"
+            >Katten die spinnen brullen niet, en katten die brullen spinnen
+            niet.
+            <br />
+            Welke van deze katten spint als een huiskat?</label
+          >
+          <select class="question-list__dropdown" name="huiskat" id="huiskat">
+            <option value="">-- Kies --</option>
+            <option value="tijger">tijger</option>
+            <option value="leeuw">leeuw</option>
+            <option value="poema">poema</option>
+            <option value="jaguar">jaguar</option>
+          </select>
+        </section>
+        <section class="user">
+          <h2 class="user__title">Over jou</h2>
+          <div class="user__content">
+            <div class="user__form">
+              <label class="user__answer">
+                <span class="label"
+                  >voornaam <span class="required">*</span></span
+                >
+                <input class="user__textfield" type="text" name="voornaam" />
+              </label>
+              <label class="user__answer">
+                <span class="label"
+                  >achternaam <span class="required">*</span></span
+                >
+                <input class="user__textfield" type="text" name="achternaam" />
+              </label>
+              <label class="user__answer">
+                <span class="label">email <span class="required">*</span></span>
+                <input class="user__textfield" type="email" name="email" />
+              </label>
+              <label class="user__answer">
+                <span class="label">GSM <span class="required">*</span></span>
+                <input class="user__textfield" type="tel" name="gsm" />
+              </label>
+            </div>
+            <label class="user__answer" for="dieren">
+              Heb jij dieren? Vertel het ons!
+              <textarea class="user__text" name="dieren"></textarea>
+            </label>
+          </div>
+        </section>
+        <section class="send">
+          <p class="send__title">Dank je om deel te nemen!</p>
+          <button type="submit" class="send__content">
+            Verzend mijn antwoorden
+          </button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
